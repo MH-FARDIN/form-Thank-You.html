@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 40px;
+            background-color: #ffffff;
+            background-size: contain;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4a7bff;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            text-align: center;
+
+        }
+
+        .btn:hover {
+            background-color: #3a6ae6;
+        }
+
+        .img {
+            background-size: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img class="img" src="image.jpg" alt="Thank you illustration">
+        </div>
+        <div class="content">
+            <h1>Thank You!</h1>
+            <p>Someone will be calling you in 2 minutes.<br>We look forward to talking to you!</p>
+            <a href="https://mh-fardin.github.io/form/" class="btn" onclick="goBackHome()">Go Back Home</a>
+        </div>
+    </div>
+
+    <script>
+        function goBackHome() {
+            // Replace 'index.html' with the actual path to your home page
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>
